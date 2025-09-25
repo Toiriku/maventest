@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKERHUB_CREDENTIALS_ID = 'dockerhub-credentials'
+        DOCKERHUB_CREDENTIALS_ID = 'b5a68f67-1755-46c0-90bb-15b72f0532ca'
         DOCKERHUB_REPO = 'toiriku/maventest'
         DOCKER_IMAGE_TAG = 'latest'
     }
