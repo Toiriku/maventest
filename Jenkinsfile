@@ -16,7 +16,9 @@ pipeline {
 
         stage('Build & Test') {
             steps {
-                bat 'cd my-app && mvn clean test'
+                dir('my-app') {
+                    bat 'mvn clean package'
+                }
             }
         }
 
