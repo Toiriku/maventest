@@ -16,9 +16,7 @@ pipeline {
 
         stage('Build & Test') {
             steps {
-                dir('my-app') {
                     bat 'mvn clean package'
-                }
             }
         }
 
